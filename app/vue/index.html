@@ -1,0 +1,15 @@
+<h1>Controle AngularJS</h1>
+
+<main>
+     
+    <section *ngFor="let item of ListeTask" >
+        <h4>Liste des taches a effectuer</h4>
+
+        <!--appeller la directive(selector) en envoyant item-->
+        <list-team [item]="item" (DeleteTaskData)="deleteTask($event)" ></list-team>
+
+    </section>
+    
+
+</main>
+
